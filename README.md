@@ -1,3 +1,22 @@
+<div align="center">
+  <a href="https://www.sholaayeni.com/" target="_blank"><img src="https://raw.githubusercontent.com/ayenisholah/portfolio-v2/main/public/logos/logo-128x128.png" width="100" alt="Shola Ayeni" /></a>
+</div>
+<h1 align="center">
+  www.sholaayeni.com - v2
+</h1>
+<p align="center">
+  The second iteration of <a href="https://sholaayeni.com" target="_blank">sholaayeni.com</a> built with <a href="https://www.nextjs.org/" target="_blank">NextJS</a> designed by  <a href="https://dribbble.com/25_design_street" target="_blank">Thanau Sultana</a> and hosted with <a href="https://vercel.com" target="_blank">Vercel</a>
+</p>
+
+## 🚨 Forking this repo (please read!)
+
+Yes, you can fork this repo. Please give me proper credit by linking back to [sholaayeni.com](https://sholaayeni.com) Thanks! Or you could support by sending any of the following cryptocurrencies:
+
+- `BTC` 13EXm5895NPNUXLW8xAQbPSoksz4qqieVN
+- `ETH` 0x40dd0002e514426ed51d158252e9c262404fa9db
+- `USDC` 0x40dd0002e514426ed51d158252e9c262404fa9db
+- `USDT` TCwtbe5hVx6ezzEGbaWxckbeNgNvgFbz9Z
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
