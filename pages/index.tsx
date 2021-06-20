@@ -10,11 +10,10 @@ export default function Home() {
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta
           name="viewport"
-          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5"
         />
         <meta name="description" content="Shola Ayeni is a software engineer who specializes in building efficient and scalable single-page applications and server-side applications" />
         <meta name="keywords" content="Software Engineer" />
-        <meta/>
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
         <link
