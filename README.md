@@ -17,7 +17,7 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [sh
 - `USDC` 0x40dd0002e514426ed51d158252e9c262404fa9db
 - `USDT` TCwtbe5hVx6ezzEGbaWxckbeNgNvgFbz9Z
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
