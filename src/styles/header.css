@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.Header {
+  height: 100px;
+  background-color: #ffffff;
+  padding: 0px 50px 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-links,
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  width: 40%;
+}
+
+.nav-links a {
+  font-size: 1rem;
+  color: #081929;
+}
+
+.social-links {
+  width: 10%;
+}
+
+/* Tablet screen size */
+@media screen and (max-width: 1024px) {
+  .Header {
+    border: 1px solid tomato;
+    padding: 19.5px 25px;
+  }
+  .nav-links {
+    width: 50%;
+  }
+
+  .social-links {
+    width: 12.5%;
+  }
+}
