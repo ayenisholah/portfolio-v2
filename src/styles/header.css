@@ -33,6 +33,7 @@
 @media screen and (max-width: 1024px) {
   .Header {
     padding: 19.5px 25px;
+    width: 100%;
   }
   .nav-links {
     width: 50%;
@@ -46,7 +47,14 @@
 @media screen and (max-width: 600px) {
   .Header {
     padding: 19.5px 25px;
+    position: fixed;
   }
+
+  /* .Header .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  } */
 
   .nav-links,
   .social-links.desktop {

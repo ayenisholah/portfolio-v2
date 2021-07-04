@@ -27,7 +27,8 @@
     "**/*.tsx",
     "src/components/Burger.jsx",
     "src/pages/index.jsx",
-    "src/components/Menu.jsx"
+    "src/components/Menu.jsx",
+    "src/components/Header.jsx"
   ],
   "exclude": ["node_modules"]
 }

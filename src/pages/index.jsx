@@ -3,7 +3,6 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Menu from "../components/Menu";
-import Burger from "../components/Burger";
 import { useOnClickOutside } from "../hooks/UseOnClickOutside";
 
 export default function Home() {
@@ -49,10 +48,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header />
+        <Header open={open} setOpen={setOpen} />
         <Hero />
         <Menu open={open} setOpen={setOpen} />
-        <Burger open={open} setOpen={setOpen} />
       </main>
     </div>
   );

@@ -4,8 +4,10 @@ import logo from "../assets/logo.png";
 import medium from "../assets/medium.svg";
 import github from "../assets/github.svg";
 import linkedin from "../assets/linkedin.svg";
+import Burger from "./Burger";
+import { bool, func } from "prop-types";
 
-export default function Header() {
+export default function Header({ open, setOpen }) {
   return (
     <div className="Header">
       <Image
@@ -76,6 +78,12 @@ export default function Header() {
           />
         </a>
       </div>
+      <Burger open={open} setOpen={setOpen} />
     </div>
   );
 }
+
+Header.propTypes = {
+  open: bool.isRequired,
+  setOpen: func.isRequired,
+};
