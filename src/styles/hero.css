@@ -73,51 +73,6 @@
   background: #34667e;
 }
 
-.connect_action {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding-top: 40px;
-}
-
-.connect_action .connect_input {
-  padding: 15px 50px;
-  width: 360px;
-  margin-right: 13px;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 19px;
-  letter-spacing: 0.04em;
-  color: #081929;
-  opacity: 0.5;
-  background: #ffffff;
-  border-radius: 5px;
-  outline: none;
-  border: 0px solid;
-}
-
-.connect_input :focus {
-  outline: 1px solid #ffb22a;
-  border: 1px solid #ffb22a;
-}
-
-.connect_action .connect_button {
-  padding: 13px 20px;
-  background: #081929;
-  border: 1px solid #081929;
-  border-radius: 5px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1rem;
-  line-height: 19px;
-  letter-spacing: 0.04em;
-  color: #ffb22a;
-  z-index: 3;
-}
-
 .hero-image {
   position: relative;
   width: 53.6%;
@@ -154,7 +109,6 @@
 
 @media screen and (max-width: 1024px) {
   .Hero {
-    border: 1px solid tomato;
     padding-left: 25px;
   }
 
@@ -186,7 +140,6 @@
 
 @media screen and (max-width: 600px) {
   .Hero {
-    border: 1px solid blue;
     flex-direction: column;
     align-items: center;
     padding-left: 0;

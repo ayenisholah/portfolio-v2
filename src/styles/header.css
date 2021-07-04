@@ -32,7 +32,6 @@
 /* Tablet screen size */
 @media screen and (max-width: 1024px) {
   .Header {
-    border: 1px solid tomato;
     padding: 19.5px 25px;
   }
   .nav-links {
@@ -46,7 +45,6 @@
 
 @media screen and (max-width: 600px) {
   .Header {
-    border: 1px solid blue;
     padding: 19.5px 25px;
   }
 
