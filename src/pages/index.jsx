@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import Head from "next/head";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Menu from "../components/Menu";
+import Burger from "../components/Burger";
+import { useOnClickOutside } from "../hooks/UseOnClickOutside";
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
+  const node = useRef();
+  useOnClickOutside(node, () => setOpen(false));
+
   return (
     <div>
       <Head>
@@ -32,7 +39,7 @@ export default function Home() {
           type="image/png"
           sizes="32x32"
         />
-        <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+        <link rel="apple-touch-icon" href="/logos/logo-16x16.png"></link>
         <meta name="theme-color" content="#ffb22a" />
         <script
           src="https://kit.fontawesome.com/cb737ff7bb.js"
@@ -44,6 +51,8 @@ export default function Home() {
       <main>
         <Header />
         <Hero />
+        <Menu open={open} setOpen={setOpen} />
+        <Burger open={open} setOpen={setOpen} />
       </main>
     </div>
   );

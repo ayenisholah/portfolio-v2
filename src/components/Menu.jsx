@@ -1,38 +1,22 @@
 import React from "react";
 import Image from "next/image";
-import logo from "../assets/logo.png";
 import medium from "../assets/medium.svg";
 import github from "../assets/github.svg";
 import linkedin from "../assets/linkedin.svg";
+import { bool } from "prop-types";
 
-export default function Header() {
+export default function Menu({ open }) {
   return (
-    <div className="Header">
-      <Image
-        className="logo"
-        src={logo}
-        alt="Shola Ayeni's Logo"
-        height={96}
-        width={96}
-      />
-      <nav className="nav-links" role="navigation">
-        <a className="nav-link-item" href="/home">
-          Home
-        </a>
-        <a className="nav-link-item" href="/about">
-          About me
-        </a>
-        <a className="nav-link-item" href="/works">
-          Works
-        </a>
-        <a className="nav-link-item" href="/blog">
-          Blog
-        </a>
-        <a className="nav-link-item" href="/contact">
-          Contact me
-        </a>
-      </nav>
-      <div className="social-links desktop">
+    <nav
+      className={open ? "Mobile_navigation open" : "Mobile_navigation close"}
+      role="navigation"
+    >
+      <a href="/home">Home</a>
+      <a href="/about">About me</a>
+      <a href="/works">Works</a>
+      <a href="/blog">Blog</a>
+      <a href="/contact">Contact me</a>
+      <div className="social-links mobile">
         <a
           className="social-link-item"
           href="https://www.linkedin.com/in/ayenishola/"
@@ -76,6 +60,10 @@ export default function Header() {
           />
         </a>
       </div>
-    </div>
+    </nav>
   );
 }
+
+Menu.propTypes = {
+  open: bool.isRequired,
+};

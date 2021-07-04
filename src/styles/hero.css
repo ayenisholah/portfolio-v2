@@ -18,10 +18,8 @@
   font-family: Cormorant Upright;
   font-style: normal;
   font-weight: bold;
-  font-size: 70px;
+  font-size: 4.375rem;
   line-height: 85px;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.05em;
   color: #ffb22a;
 }
@@ -31,10 +29,8 @@
   padding-top: 20px;
   font-style: normal;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 47px;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.02em;
   color: #081929;
 }
@@ -44,7 +40,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 40px;
   display: flex;
   align-items: center;
@@ -58,7 +54,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 19px;
   letter-spacing: 0.02em;
   color: #34667e;
@@ -71,9 +67,8 @@
 }
 
 .hero-text .connect_text span {
-  padding-right: 20px;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background: #34667e;
 }
@@ -86,13 +81,13 @@
 }
 
 .connect_action .connect_input {
-  padding: 15px 98px 15px 50px;
+  padding: 15px 50px;
   width: 360px;
   margin-right: 13px;
   font-family: FontAwesome;
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 19px;
   letter-spacing: 0.04em;
   color: #081929;
@@ -103,6 +98,11 @@
   border: 0px solid;
 }
 
+.connect_input :focus {
+  outline: 1px solid #ffb22a;
+  border: 1px solid #ffb22a;
+}
+
 .connect_action .connect_button {
   padding: 13px 20px;
   background: #081929;
@@ -111,10 +111,11 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 19px;
   letter-spacing: 0.04em;
   color: #ffb22a;
+  z-index: 3;
 }
 
 .hero-image {
@@ -142,11 +143,137 @@
 }
 
 .hero-image .gold {
-  width: 38%;
+  width: 37.8%;
   height: 694px;
   background-color: #ffb22a;
   position: absolute;
   left: 62.19%;
   top: 0;
   z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .Hero {
+    border: 1px solid tomato;
+    padding-left: 25px;
+  }
+
+  .hero-text h1 {
+    font-size: 3.4375rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.875rem;
+  }
+
+  .hero-text .description,
+  .hero-text .connect_text {
+    font-size: 0.9375rem;
+  }
+
+  .hero-text .connect_text {
+    text-align: center;
+    align-items: flex-start;
+    vertical-align: text-top;
+  }
+
+  .hero-text .connect_text span {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Hero {
+    border: 1px solid blue;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    padding-left: 25px;
+    padding-top: 30px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+  }
+
+  .hero-text h2 {
+    padding-left: 25px;
+    padding-top: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+
+  .hero-text .description {
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-right: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+
+  .hero-text .connect_text {
+    padding-left: 25px;
+    padding: 15px 25px 0 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
+    /* or 143% */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+    justify-content: flex-start;
+  }
+  .hero-text .connect_text span {
+    margin-left: 25px;
+    margin-top: 4px;
+  }
+
+  .hero-image .black {
+    position: absolute;
+    width: 64.8%;
+    height: 333px;
+    left: 6.67%;
+    top: 53px;
+  }
+  .hero-image .white {
+    width: 43.73%;
+    height: 360px;
+    position: absolute;
+    top: 40px;
+    left: 38.4%;
+  }
+
+  .hero-image .gold {
+    width: 25.87%;
+    height: 410px;
+    background-color: #ffb22a;
+    position: absolute;
+    left: 74.13%;
+    top: 15px;
+  }
 }

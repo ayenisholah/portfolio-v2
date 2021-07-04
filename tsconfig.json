@@ -21,6 +21,13 @@
     "strict": true,
     "target": "es2018"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/Burger.jsx",
+    "src/pages/index.jsx",
+    "src/components/Menu.jsx"
+  ],
   "exclude": ["node_modules"]
 }

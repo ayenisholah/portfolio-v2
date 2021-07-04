@@ -14,14 +14,6 @@ export default function Hero() {
           <span></span>
           <div>I am available for full time employment and a cup of coffee</div>
         </div>
-        <div className="connect_action">
-          <input
-            className="connect_input"
-            type="text"
-            placeholder="&#xf0e0; send me a message..."
-          />
-          <button className="connect_button">Connect with me</button>
-        </div>
       </div>
       <div className="hero-image">
         <div className="white"></div>

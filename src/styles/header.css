@@ -43,3 +43,15 @@
     width: 12.5%;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .Header {
+    border: 1px solid blue;
+    padding: 19.5px 25px;
+  }
+
+  .nav-links,
+  .social-links.desktop {
+    display: none;
+  }
+}
