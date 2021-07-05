@@ -24,13 +24,13 @@ export default function Header({ open, setOpen }) {
         <a className="nav-link-item" href="#about">
           About me
         </a>
-        <a className="nav-link-item" href="/works">
+        <a className="nav-link-item" href="#works">
           Works
         </a>
-        <a className="nav-link-item" href="/blog">
+        <a className="nav-link-item" href="#blog">
           Blog
         </a>
-        <a className="nav-link-item" href="/contact">
+        <a className="nav-link-item" href="#contact">
           Contact me
         </a>
       </nav>

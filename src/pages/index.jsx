@@ -50,8 +50,10 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header open={open} setOpen={setOpen} />
-        <Menu open={open} setOpen={setOpen} />
+        <div ref={node}>
+          <Header open={open} setOpen={setOpen} />
+          <Menu open={open} setOpen={setOpen} />
+        </div>
         <Hero />
         <About />
       </main>

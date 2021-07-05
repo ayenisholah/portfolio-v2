@@ -3,19 +3,29 @@ import Image from "next/image";
 import medium from "../assets/medium.svg";
 import github from "../assets/github.svg";
 import linkedin from "../assets/linkedin.svg";
-import { bool } from "prop-types";
+import { bool, func } from "prop-types";
 
-export default function Menu({ open }) {
+export default function Menu({ open, setOpen }) {
   return (
     <nav
       className={open ? "Mobile_navigation open" : "Mobile_navigation close"}
       role="navigation"
     >
-      <a href="#home">Home</a>
-      <a href="#about">About me</a>
-      <a href="/works">Works</a>
-      <a href="/blog">Blog</a>
-      <a href="/contact">Contact me</a>
+      <a href="#home" onClick={() => setOpen(false)}>
+        Home
+      </a>
+      <a href="#about" onClick={() => setOpen(false)} s>
+        About me
+      </a>
+      <a href="#works" onClick={() => setOpen(false)}>
+        Works
+      </a>
+      <a href="#blog" onClick={() => setOpen(false)}>
+        Blog
+      </a>
+      <a href="#contact" onClick={() => setOpen(false)} s>
+        Contact me
+      </a>
       <div className="social-links mobile">
         <a
           className="social-link-item"
@@ -66,4 +76,5 @@ export default function Menu({ open }) {
 
 Menu.propTypes = {
   open: bool.isRequired,
+  setOpen: func.isRequired,
 };
