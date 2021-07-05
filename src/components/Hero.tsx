@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="Hero">
+    <div className="Hero" id="home">
       <div className="hero-text">
         <h1>Shola Ayeni</h1>
         <h2>Software Developer</h2>
@@ -13,6 +13,9 @@ export default function Hero() {
         <div className="connect_text">
           <span></span>
           <div>I am available for full time employment and a cup of coffee</div>
+        </div>
+        <div className="btn">
+          <button className="connect">Connect with me</button>
         </div>
       </div>
       <div className="hero-image">

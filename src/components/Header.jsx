@@ -18,10 +18,10 @@ export default function Header({ open, setOpen }) {
         width={96}
       />
       <nav className="nav-links" role="navigation">
-        <a className="nav-link-item" href="/home">
+        <a className="nav-link-item" href="#home">
           Home
         </a>
-        <a className="nav-link-item" href="/about">
+        <a className="nav-link-item" href="#about">
           About me
         </a>
         <a className="nav-link-item" href="/works">

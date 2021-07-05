@@ -2,6 +2,8 @@ import React, { useState, useRef } from "react";
 import Head from "next/head";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import About from "../components/About";
+
 import Menu from "../components/Menu";
 import { useOnClickOutside } from "../hooks/UseOnClickOutside";
 
@@ -49,8 +51,9 @@ export default function Home() {
 
       <main>
         <Header open={open} setOpen={setOpen} />
-        <Hero />
         <Menu open={open} setOpen={setOpen} />
+        <Hero />
+        <About />
       </main>
     </div>
   );

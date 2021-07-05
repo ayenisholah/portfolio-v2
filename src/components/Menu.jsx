@@ -11,8 +11,8 @@ export default function Menu({ open }) {
       className={open ? "Mobile_navigation open" : "Mobile_navigation close"}
       role="navigation"
     >
-      <a href="/home">Home</a>
-      <a href="/about">About me</a>
+      <a href="#home">Home</a>
+      <a href="#about">About me</a>
       <a href="/works">Works</a>
       <a href="/blog">Blog</a>
       <a href="/contact">Contact me</a>
