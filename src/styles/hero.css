@@ -122,7 +122,6 @@
   padding: 13px 20px;
   cursor: pointer;
   background-color: #f9f9fc;
-  /* identical to box height */
   letter-spacing: 0.04em;
   color: #ffb22a;
 }
@@ -163,6 +162,7 @@
     align-items: center;
     padding-left: 0;
     height: 830px;
+    padding: 0 25px;
   }
 
   .hero-text {
@@ -176,7 +176,6 @@
   }
 
   .hero-text h1 {
-    padding-left: 25px;
     padding-top: 30px;
     text-align: center;
     font-style: normal;
@@ -187,7 +186,6 @@
   }
 
   .hero-text h2 {
-    padding-left: 25px;
     padding-top: 15px;
     font-style: normal;
     font-weight: normal;
@@ -198,9 +196,7 @@
   }
 
   .hero-text .description {
-    padding-left: 25px;
     padding-top: 15px;
-    padding-right: 25px;
     font-style: normal;
     font-weight: normal;
     font-size: 0.875rem;
@@ -210,21 +206,16 @@
   }
 
   .hero-text .connect_text {
-    padding-left: 25px;
-    padding: 15px 25px 0 0;
+    padding-top: 15px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     line-height: 20px;
-
-    /* or 143% */
-
     text-align: center;
     letter-spacing: 0.02em;
     justify-content: center;
   }
   .hero-text .connect_text span {
-    margin-left: 25px;
     margin-top: 4px;
   }
 
@@ -254,9 +245,5 @@
     position: absolute;
     left: 74.13%;
     top: 15px;
-  }
-
-  .hero-text .connect_text span {
-    margin-right: 5px;
   }
 }
